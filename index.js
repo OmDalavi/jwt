@@ -2,11 +2,13 @@ const express = require("express");
 const jwt = require("jsonwebtoken");
 const ejs = require("ejs");
 const key = "this is my secret key";
+const dotenv = require("dotenv");
 const username = "om";
 const cookieParser = require("cookie-parser");
 const password = "om";
 const bp = require("body-parser");
-
+dotenv.config();
+let PORT = process.env.PORT || 8080;
 const user = {
   isAdmin: true,
   name: "om dalavi",

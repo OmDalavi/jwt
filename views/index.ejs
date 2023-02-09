@@ -7,10 +7,13 @@
     <title>Document</title>
   </head>
   <body>
-    <form action="/login" method="post">
-      <input type="text" name="u" />
-      <input type="text" name="p" />
-      <button type="submit">Submit</button>
-    </form>
+    <h1>hellowrodl</h1>
+    <script>
+      setInterval(function () {
+        fetch("https://astrovnit.onrender.com/user/getUserInfo").then((res) => {
+          console.log(res);
+        });
+      }, 840000);
+    </script>
   </body>
 </html>
